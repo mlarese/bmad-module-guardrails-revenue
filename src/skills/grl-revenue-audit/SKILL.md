@@ -75,4 +75,3 @@ Chiudi con una riga strutturata:
 ```json
 {"status":"complete|blocked","folder":"{audit}","verdict":"READY_FOR_PLAN|EVIDENZA_INSUFFICIENTE"}
 ```
-

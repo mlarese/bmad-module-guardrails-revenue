@@ -27,7 +27,7 @@ stesse figure, stesso comportamento, solo l'area revenue.
 | `grl-revenue-audit` | Audita dati e prezzi revenue | Produce un audit read-only di export, qualità dati, KPI, domanda e floor economico, con fonti, formule, blocker e dati mancanti. |
 | `grl-revenue-plan` | Prepara un piano revenue | Costruisce scenari di pricing, domanda e profitto separando floor, mercato e forecast, con trigger di monitoraggio e senza pubblicare tariffe. |
 | `grl-revenue-preflight` | Preflight PMS e Channel Manager | Verifica contratto, mapping, semantica per-data/LOS, dry-run, response, riconciliazione, idempotenza e rollback prima dell'invio. |
-| `grl-automation` | Instrada un'automazione | Classifica lo scenario, sceglie agenti e workflow BMad e dichiara capability mancanti, scope e approvazioni. |
+| `grl-automation` | Instrada un'automazione | Classifica lo scenario, sceglie agenti e workflow BMad e dichiara capability mancanti, scope e approvazioni, includendo social/content e creative video. |
 | `grl-automation` | Prepara un piano eseguibile | Costruisce passi idempotenti con input, output, precondizioni, rischio, approvazione e rollback. |
 | `grl-automation` | Esegui controlli read-only | Raccoglie evidenze e confronti riproducibili senza modificare sistemi esterni. |
 | `grl-automation` | Prepara un dry-run | Genera e valida diff o payload senza spendere, pubblicare o applicare side effect. |

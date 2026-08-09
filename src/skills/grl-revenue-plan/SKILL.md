@@ -73,4 +73,3 @@ di stop. Se `bmad-review` è disponibile, usalo solo per la prosa. Chiudi con:
 ```json
 {"status":"complete|blocked","folder":"{plan}","verdict":"READY_FOR_PREFLIGHT|EVIDENZA_INSUFFICIENTE|NO_GO"}
 ```
-

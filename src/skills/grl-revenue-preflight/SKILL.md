@@ -72,4 +72,3 @@ che nessun output dica “integrazione pronta” senza contratto e riconciliazio
 ```json
 {"status":"complete|blocked","folder":"{preflight}","verdict":"GO|GO_CON_CONDIZIONI|NO_GO|EVIDENZA_INSUFFICIENTE"}
 ```
-
