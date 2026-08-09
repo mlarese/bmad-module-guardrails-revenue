@@ -4,6 +4,7 @@ Chi entra e su quale segnale. Una figura entra solo se nell'artefatto — o nel 
 
 | Figura | Skill | Entra quando compare |
 | ------ | ----- | -------------------- |
+| Rhea 📈 | `grl-agent-revenue` | tariffe e pricing, KPI alberghieri (ADR, RevPAR, TRevPAR, GopPAR), forecast e pickup, inventario e canali, integrazioni PMS e Channel Manager |
 
 Oltre alle figure, una rotta: su una landing o una pagina di prodotto convoca anche `grl-web` in diagnosi, per l'asse che nessuna figura copre — cosa la pagina dice, in che ordine, e se chiede l'azione prima di aver smontato l'obiezione. Quando la pagina arriva dal gate di `grl-web`, la lettura non ripete l'asse ma lo **verifica**: si ricostruisce il brief dalla pagina a freddo e si dice dove diverge da quello scritto. Se non diverge, è una riga sola. Conta come rotta, non come figura del collegio.
 
@@ -13,8 +14,14 @@ Chi ha la competenza decisiva parla, gli altri tacciono anche quando il tema li 
 
 | Questione | Parla | Tace |
 | --------- | ----- | ---- |
+| Tariffa, KPI alberghiero, forecast, inventario, canale, invio a PMS o Channel Manager | Rhea | Marta se il tema diventa fiscale; Dario se la domanda è sullo schema che conserva i dati; Vera sui dati dell'ospite |
 
 Una figura del roster che non è installata nel progetto non si convoca: applica il suo mandato da questa tabella e dillo in una riga.
+
+**Marta non registra rischi accettati.** È l'unica figura del collegio che non scrive in
+`accepted-risks.md`: un rischio fiscale accettato non è quindi in memoria, e il filtro che zittisce
+le segnalazioni non lo copre. Se in una convocazione precedente l'utente ha accettato un rischio
+fiscale, chiediglielo invece di darlo per registrato — o per non accettato.
 
 ## Figure fuori da questo modulo
 
