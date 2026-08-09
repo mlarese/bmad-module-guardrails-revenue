@@ -1,0 +1,26 @@
+{
+  "name": "guardrails-revenue",
+  "owner": "mlarese",
+  "description": "Guardrails Revenue: revenue management alberghiero, pricing, forecast, profitto e integrazioni PMS/Channel Manager.",
+  "plugins": [
+    {
+      "name": "grv",
+      "source": "./src",
+      "description": "Rhea e tre workflow per audit read-only dei dati, scenari di pricing e preflight PMS/Channel Manager. Usa il modello QuoProfit/RevD come conoscenza interna, ricerca di dominio verificabile e calcoli deterministici; nessuna pubblicazione verso sistemi esterni senza un gate esplicito, dry-run, approvazione e rollback.",
+      "version": "1.23.0",
+      "author": "mlarese",
+      "homepage": "https://github.com/mlarese/bmad-module-guardrails-revenue",
+      "repository": "https://github.com/mlarese/bmad-module-guardrails-revenue",
+      "license": "MIT",
+      "skills": [
+        "src/skills/grv-profile",
+        "src/skills/grv-board",
+        "src/skills/grl-agent-revenue",
+        "src/skills/grl-revenue-audit",
+        "src/skills/grl-revenue-plan",
+        "src/skills/grl-revenue-preflight",
+        "src/skills/grl-automation"
+      ]
+    }
+  ]
+}

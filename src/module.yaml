@@ -1,0 +1,56 @@
+# Manifesto del modulo Guardrails Revenue (grv).
+#
+# GENERATO da tools/build_modules.py nel repository bmad-module-guardrails.
+# Non modificare qui: le modifiche si fanno nella fonte e poi si rigenera.
+#
+# Questa è la copia che legge l'installer BMad: la cerca in src/module.yaml.
+
+code: grv
+name: Guardrails Revenue
+description: "Rhea e tre workflow per audit read-only dei dati, scenari di pricing e preflight PMS/Channel Manager. Usa il modello QuoProfit/RevD come conoscenza interna, ricerca di dominio verificabile e calcoli deterministici; nessuna pubblicazione verso sistemi esterni senza un gate esplicito, dry-run, approvazione e rollback."
+module_version: 1.23.0
+default_selected: false
+
+module_greeting: >
+  Guardrails Revenue è installato: Rhea (revenue management strategist) entra nel roster e si può convocare per nome.
+
+  Passo successivo consigliato: esegui `grv-profile`. Senza il profilo di progetto la figura parte cieca e parla per luoghi comuni; con il profilo sa cosa non ti riguarda, che è il suo output più utile.
+
+  Il profilo vive in `_bmad/memory/grl-shared/` ed è condiviso con gli altri moduli Guardrails: si compila una volta sola.
+
+# --- Contesto di esecuzione ---------------------------------------------------
+# Nessuna variabile di configurazione del modulo: tutto il contesto vive nella
+# memoria condivisa del progetto (_bmad/memory/grl-shared/project-profile.md).
+# La severità si deriva dalla criticità dichiarata nel profilo di progetto.
+#
+# La cartella della memoria condivisa NON va creata dall'installer: la crea
+# grv-profile alla prima esecuzione.
+#
+# Questo modulo è una porzione del bundle Guardrails (`grl`). Bundle e moduli
+# tematici installano skill con lo stesso nome: non vanno installati insieme
+# nello stesso progetto.
+
+post-install-notes: >
+  Primo passo: esegui `grv-profile`. Sono otto campi, pochi minuti, quasi tutti
+  pre-compilati leggendo il repository; l'unico che devi dichiarare tu è la criticità
+  del progetto (hobby/prototipo · interno · produzione con clienti · regolamentato),
+  perché è quella che regola quanto sarà severa ogni figura.
+
+  Poi puoi chiamare una figura per nome, oppure usare `grv-board` per farle
+  guardare tutte insieme lo stesso artefatto.
+
+  Se ti servono anche le figure delle altre aree, il bundle completo `grl` le
+  contiene tutte: https://github.com/mlarese/bmad-module-guardrails
+
+# --- Roster degli agenti -----------------------------------------------------
+# `code`, `name`, `title`, `icon` e `description` sono copiati verbatim dal blocco
+# [agent] del customize.toml di ciascuna skill: quelli restano la fonte di verità.
+
+agents:
+  - code: grl-agent-revenue
+    module: grv
+    team: software-development
+    name: Rhea
+    title: Revenue Management Strategist
+    icon: 📈
+    description: Consulenza e calcoli di revenue management alberghiero con conoscenza QuoProfit/RevD, KPI, pricing, forecasting e integrazioni PMS/Channel Manager.
