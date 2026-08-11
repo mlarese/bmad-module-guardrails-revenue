@@ -16,7 +16,10 @@ Chi ha la competenza decisiva parla, gli altri tacciono anche quando il tema li 
 | --------- | ----- | ---- |
 | Tariffa, KPI alberghiero, forecast, inventario, canale, invio a PMS o Channel Manager | Rhea | Marta se il tema diventa fiscale; Dario se la domanda è sullo schema che conserva i dati; Vera sui dati dell'ospite |
 
-Una figura del roster che non è installata nel progetto non si convoca: applica il suo mandato da questa tabella e dillo in una riga.
+Una figura del roster che non è installata nel progetto non si convoca come agente: applica il suo mandato da questa tabella e dillo in una riga. Dove finisce nell'elenco dipende dal lavoro:
+
+- nella **revisione ordinaria** compare fra le **convocate**, con la nota «mandato applicato dal roster, skill non installata»;
+- nel **release gate** compare fra le **escluse**, con lo stesso motivo: lì l'elenco serve a provare chi ha guardato davvero.
 
 **Marta non registra rischi accettati.** È l'unica figura del collegio che non scrive in
 `accepted-risks.md`: un rischio fiscale accettato non è quindi in memoria, e il filtro che zittisce
